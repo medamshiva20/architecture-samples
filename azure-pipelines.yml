@@ -9,11 +9,6 @@ trigger:
 pool:
   name: DevOps_Agent
 steps:
-- task: JavaToolInstaller@0
-  inputs:
-    versionSpec: '8' # string. Required. JDK version. Default: 8.
-    jdkArchitectureOption:  'x64' 
-    jdkSourceOption: AzureStorage
 - task: Gradle@2
   inputs:
     workingDirectory: ''
