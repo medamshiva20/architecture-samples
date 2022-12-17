@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: DevOps_Agent
+  VmImage: default
 steps:
 - task: Gradle@2
   inputs:
